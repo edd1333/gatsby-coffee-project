@@ -1,5 +1,5 @@
 :root {
-  --mainBrown: #2d1e1f;
+  --mainBrown: rgb(45, 30, 31);
   --mainYellow: rgb(255, 158, 9);
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
@@ -32,14 +32,18 @@ h6 {
   font-size: 2rem;
 }
 
-.default-background {
+.default-background,
+.about-background {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(45, 30, 31, 0.5));
   background-position: center;
   background-size: cover;
+}
+.about-background {
+  min-height: 60vh;
 }
 
 .btn-yellow {
